@@ -17,6 +17,8 @@ body{
     height: 100vh;
     background-image:linear-gradient( to bottom left,var(--primary),var(--secondary));
     flex-wrap: wrap;
+    overflow: auto;
+
 }
 
 .clock-main{
@@ -41,7 +43,7 @@ body{
 
 }
 
-@media (width<=300px) and (height<=300px) {
+@media (width<=500px)  {
     .parent{
         width: auto;
     }
