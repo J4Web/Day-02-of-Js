@@ -14,7 +14,7 @@ function getData(){
     const hour=date.getHours();
     const hourEqOfDeg=((hour/12)*360)+90;
     getHour.style.transform=`rotate(${hourEqOfDeg}deg)`
-    console.log(secHand);
+    // console.log(secHand);
 }
 
 
