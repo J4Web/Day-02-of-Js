@@ -10,14 +10,13 @@
     --secondary:#9179f2;
 }
 
-.parent{
+body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-image:linear-gradient( to bottom left,var(--primary),var(--secondary));
     flex-wrap: wrap;
-
 }
 
 .clock-main{
@@ -42,7 +41,10 @@
 
 }
 
-@media (width<=300px) {
+@media (width<=300px) and (height<=300px) {
+    .parent{
+        width: auto;
+    }
     .clock-main{
         width: 100px;
         height: 100px;
@@ -56,9 +58,9 @@
         background: #000;
         top:50%;
         transform-origin: 100%;
-        transition:  all 0.05s;
         transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
         transform: rotate(90deg);
+        overflow: auto;
     
     }
 }
